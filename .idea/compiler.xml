@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-mongo-api" />
+        <module name="springboot-elasticsearch" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-mongo-api" options="-parameters" />
     </option>
   </component>
